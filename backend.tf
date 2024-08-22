@@ -13,10 +13,10 @@ terraform {
 # NEXUS_USERNAME
 # NEXUS_PASSWORD
 provider "nexus" {
-  insecure = var.nexus.insecure
-  url      = var.nexus.url
-  username = var.nexus.username
-  password = var.nexus.password
+  # insecure = var.nexus.insecure
+  # url      = var.nexus.url
+  # username = var.nexus.username
+  # password = var.nexus.password
 
 }
 

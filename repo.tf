@@ -391,7 +391,7 @@ resource "nexus_repository_pypi_proxy" "proxy" {
 
 
 resource "nexus_repository_pypi_group" "group" {
-  name   = "pypi-group"
+  name   = "pypi"
   online = true
 
   group {
