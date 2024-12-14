@@ -50,10 +50,12 @@ blobstore_file = [
   "pypi-proxy",
   "pypi-group",
   "go-proxy",
-  "go-group", 
+  "go-group",
   "maven-local",
   "maven-proxy",
   "maven-group",
+  "yum-proxy",
+  "yum-group",
 ]
 
 
@@ -61,7 +63,7 @@ mirror_url = {
   default = "https://mirrors.ustc.edu.cn"
   data = {
     debian = {
-      debian = "https://mirrors.ustc.edu.cn/debian/"
+      debian          = "https://mirrors.ustc.edu.cn/debian/"
       debian-security = "https://mirrors.ustc.edu.cn/debian-security/"
     }
     ubuntu = {
@@ -71,23 +73,28 @@ mirror_url = {
       goproxy = "https://goproxy.cn"
     }
     npm = {
-      official = "https://registry.npmjs.org/"
+      official    = "https://registry.npmjs.org/"
       huaweicloud = "https://repo.huaweicloud.com/repository/npm/"
-      aliyun = "https://registry.npmmirror.com"
-      tencent = "http://mirrors.cloud.tencent.com/npm/"
+      aliyun      = "https://registry.npmmirror.com"
+      tencent     = "http://mirrors.cloud.tencent.com/npm/"
     }
     pypi = {
-      aliyun = "https://mirrors.aliyun.com/pypi"
-      tuna = "https://pypi.tuna.tsinghua.edu.cn"
-      huaweicloud ="https://mirrors.huaweicloud.com/repository/pypi"
-      nju = "https://mirror.nju.edu.cn/pypi/web/"
-      sjtu = "https://mirror.sjtu.edu.cn/pypi/web"
+      aliyun      = "https://mirrors.aliyun.com/pypi"
+      tuna        = "https://pypi.tuna.tsinghua.edu.cn"
+      huaweicloud = "https://mirrors.huaweicloud.com/repository/pypi"
+      nju         = "https://mirror.nju.edu.cn/pypi/web/"
+      sjtu        = "https://mirror.sjtu.edu.cn/pypi/web"
     }
     maven = {
       aliyun = "https://maven.aliyun.com/repository/central"
     }
 
-    
+    rocky = {
+      aliyun = "https://mirrors.aliyun.com/rockylinux"
+      ustc   = "https://mirrors.ustc.edu.cn/rocky"
+      sjtu   = "https://mirrors.sjtug.sjtu.edu.cn/"
+    }
+
   }
 
 }
